@@ -1,10 +1,119 @@
-font-family: 'Bungee Inline', cursive;
-font-family: 'Lustria', serif;
-font-family: 'NTR', sans-serif;
+body {
+margin:0px;
+border: none;
+}
 
-/* SCSS HEX */
-$linen: #EDE3DDff;
-$timberwolf: #D5D0CDff;
-$pewter-blue: #9AB2BCff;
-$blue-munsell: #508AA1ff;
-$charcoal: #2F4856ff;
+#top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(edmonton.png);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 343px;
+    color: white;
+    font-family: 'Lustria', serif;
+}
+
+h1 {
+    width: 225px;
+    height: 100px;
+    border-radius: 10px;
+    background: #2F4856;
+    padding: 18px 12px 0px 12px;
+    text-align: center;
+    text-shadow: 0 0 5px black;
+    margin-bottom: -15px;
+}
+
+h3 {
+    width: 412px;
+    height: 52px;
+    border-radius: 10px;
+    background: #508AA1;
+    padding-top: 8px;
+    text-align: center;
+    text-shadow: 0 0 5px black;
+}
+
+#middle {
+    display: flex;
+    justify-content: space-evenly;
+    background: #EDE3DD;
+    height: 343px;
+    font-family: 'Lustria', serif;
+} 
+
+.container {
+    width: 198px;
+    margin-top: 19px;
+    margin-bottom: 68px;
+    text-align: center;
+}
+
+h4 {
+    background: #D5D0CD;
+    color: white;
+    text-shadow: 0 0 5px black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.pics {
+    width: 200px;
+    height: 199.34px;
+    border-radius: 100px;
+}
+
+.pics:hover { 
+    filter: brightness(25%);
+}
+
+em {
+    margin-left: 10px;
+}
+
+.hover-text {
+    visibility: hidden;
+    color: white;
+    text-shadow: 0 0 5px black;
+    font-size: 12px;
+    position: relative;
+    z-index: 1;
+    top: -165px;
+}
+
+.hover-wrap:hover .hover-text {
+   visibility: visible; 
+}
+
+#bottom {
+    display: flex;
+    width: 400px;
+    height: 294px;
+    margin: 50px auto 50px auto;
+    background: #9AB2BC;
+    border-bottom: 5px solid #2F4856;
+    box-shadow: 0px 6px 0px #2F4856;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0 10px 0 0;
+    font-family: 'Lustria', serif;
+}
+
+#guide {
+    width: 180px;
+    height: 248.67px;
+    margin: 25px;
+    border-radius: 10px;
+
+}
+
+#guide-box {
+    padding-top: 20px;
+}
+
+#guide-text {
+    font-style: italic;
+}
